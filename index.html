@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>Oops poistenie</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Domov</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O aplikacií</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Pridanie poistenca</h2>
+            </div>
+            <div class="card-body">
+                <form id="insuranceForm">
+                    <div class="form-group">
+                        <label for="firstName">Meno:</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Priezvisko:</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfBirth">Dátum narodenia:</label>
+                        <input type="text" class="form-control" id="dateOfBirth" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Telefónne číslo:</label>
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pridať poistenca</button>
+                </form>
+                <h3 class="mt-4">Zoznam pridaných poistencov</h3>
+                <ul id="insuredList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam, vitae deserunt in impedit quas laudantium?<br> Dolorum quis aliquam praesentium debitis, tempore sed inventore, accusamus aut, corporis quo quos tenetur.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
